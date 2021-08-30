@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather website</title>
+
+    <!-- bootstrap Css  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- main css  -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .content {
+        margin-top: 100px;
+      }
+      .header {
+        height: 100vh;
+        background-image: url("./image/pexels-rahul-pandit-2086748.jpg");
+        background-position: top;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      .weatherResult {
+        background-color: #9bf4fd9c;
+        height: 300px;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .icon {
+        font-size: 60px;
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div id="weather" class="">
+          <div class="input-group w-75 mx-auto mb-3">
+            <input
+              type="text"
+              id="weatherInput"
+              class="form-control"
+              placeholder="Weather In Your City"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              onclick="weather()"
+              class="btn btn-danger"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Search Result  -->
+      <div class="container content">
+        <div id="weatherResult" class="w-50 row mx-auto text-center"></div>
+      </div>
+      <div id="table" class="container">
+
+      </div>
+
+    </div>
+    <!-- Result in Table  -->
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/399cc4c602.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap Js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- main js  -->
+    <script src="weather.js"></script>
+  </body>
+</html>
